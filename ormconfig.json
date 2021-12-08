@@ -4,7 +4,7 @@
     "host": "localhost",
     "port": 5432,
     "username": "admin",
-    "password": "dio-inter",
+    "password": "admin",
     "database": "inter",
     "entities": ["src/entity/*.ts"],
     "logging": false,
