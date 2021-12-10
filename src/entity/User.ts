@@ -1,9 +1,8 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
+import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
 
-
-// Conceito decorator
 @Entity()
-export class User{
+export class User {
+
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
@@ -11,20 +10,21 @@ export class User{
     firstName: string;
 
     @Column()
-    lastName: number;
+    lastName: string;
 
     @Column()
     accountNumber: number;
-
+    
     @Column()
     accountDigit: number;
-
+    
     @Column()
-    wallet: string;
+    wallet: number;
 
     @Column()
     email: string;
 
     @Column()
-    password: string
+    password: string;
+
 }
